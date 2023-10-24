@@ -5,7 +5,7 @@ import PySimpleGUI as psg
 
 layou_frame = [
     [psg.Radio('Tabuada: ', 'btnRadio1', key='tabuada')],
-    [psg.Radio('Fatorial: ', 'grupoRadio1', key='fatorial', default=True)],
+    [psg.Radio('Fatorial: ', 'btnRadio1', key='fatorial', default=True)],
 
 ]
 
@@ -27,8 +27,9 @@ while True:
             num = gera_fatorial(int(valor['numero']))
             window['resultado'].update(f'{valor["numero"]}! = {num}')
         else:
-            num = gerar_tabuada(int(valor['numero']))
-            window['resultado'].update(f'{valor["numero"]}! = {num}')
+            #num = gerar_tabuada(int(valor['numero']))
+            # window['resultado'].update(f'{valor["numero"]}! = {num}')
+            window['resultado'].update(gerar_tabuada(int(valor['numero'])))
 
 
 
