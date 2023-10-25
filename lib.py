@@ -12,3 +12,8 @@ def gera_fatorial(valor):
 def gerar_tabuada(valor):
     for cont in range(0, 11):
         print(f'{cont} x {valor} = {(cont * valor)}')
+
+
+# Teste Tabuada
+
+# print(gerar_tabuada(2))
